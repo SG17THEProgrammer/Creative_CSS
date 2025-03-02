@@ -1,0 +1,412 @@
+body{
+    height: 100vh;
+}
+
+/* clip path  */
+/* go to google and search clip path  and click clipper waali link 
+https://bennettfeely.com/clippy/  */
+.shape{
+    height: 50%;
+    width: 50%;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    margin: 30px;
+}
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+/* to make the image pop out  */
+
+/* .box{
+    height: 50%;
+    width: 50%;
+    overflow: hidden;
+    margin: 30px;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+
+.box:hover img{
+    scale: 1.2;
+} */
+
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+
+/* image inside text and multiple colors in background*/
+
+/* .heading{
+
+    font-size: 100px;
+    font-weight: 900;
+    background-image: url("https://plus.unsplash.com/premium_photo-1685082778205-8665f65e8c2c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.box1{
+    background: linear-gradient(to left , red ,blue);
+
+} */
+
+
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+/* multiple border color (just like instagram) */
+
+/* 
+.circle{
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    border-radius: 50%;
+    background: linear-gradient(yellow , red ,green , purple , pink);
+    padding: 10px;
+}
+
+.circle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+} */
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+/* get shadow on particular image not on the box */
+
+
+.shadow{
+    margin: 30px;
+    height: 100%;
+    width: 100%;
+    /* yeh box ko shadow dega  */
+    /* box-shadow: 20px 20px  10px  black; */
+
+    /* aur yeh particular image ko  */
+    filter: drop-shadow(10px 10px 20px black);
+}
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+/* get border on the text */
+
+.heading2{
+    font-size: 110px;
+    -webkit-text-stroke: 4px black;
+    color: transparent;
+    height: 150vh;
+}
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+
+/* to make scrollbar colorful */
+
+body::-webkit-scrollbar { 
+    background-color: transparent ;
+}
+
+body::-webkit-scrollbar-thumb{
+    background:linear-gradient(red, blue, green);
+    border-radius: 10px;
+}
+
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+
+/* Animated underline / half underline on hover */
+
+.heading3{
+    font-size: 100px;
+    font-weight: 900;
+    position: relative; 
+    width: fit-content;
+}
+
+.heading3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6px;
+    width: 0%;
+    background-color: black;
+    transition: all ease 1s;
+}
+.heading3:hover::after{
+    width: 100%;
+
+}
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+/* Site for removing background from the images */
+
+/* https://www.remove.bg/ */
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+/* Button clicking event (click krne pe dhuk dhuk ho ) */
+
+.btn{
+    margin: 30px;
+    font-size: 80px;
+    padding: 10px;
+    background :linear-gradient(to right , red , blue );
+    font-weight: 900;
+    color: white;
+    transition: all ease 0.2s;
+}
+
+.btn:active{
+    scale: 0.9;
+}
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+/* Css hover effect (when you hover a black shadow will come from bottom) */
+
+.ctn{
+    margin: 30px;
+height: 300px;
+width: 300px;
+background-image: url("https://images.unsplash.com/photo-1505968409348-bd000797c92e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+background-size: cover;
+background-position: center;
+position: relative;
+overflow: hidden;
+}
+
+.bottom{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(transparent,black);
+    bottom: -40%;
+    transition: all ease 0.5s;
+}
+
+.ctn:hover .bottom{
+bottom: 0;
+}
+
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+/* Creating a splash effect on the image */
+/* does not work on chrome */
+/* .img1 {
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    object-fit: cover;
+    object-position: top;
+    mask-image: url(./heart1.png);
+    mask-size: contain;
+} */
+
+
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+/* Heart shape */
+
+.heart{
+    margin: 100px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: red;
+    transform: rotate(45deg);
+}
+
+
+.heart::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%,0);
+    background-color: red;
+
+}
+
+.heart::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(0%,-50%);
+    background-color: red;
+
+}
+
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+/* - to get that ... if the text is too long  */
+
+.para{
+    white-space: nowrap; /* ek hi line mein aa jaayega paragraph ka content*/
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+/* to make the background blur so that background image is visible */
+
+.outer{
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    background-color: aliceblue;
+    text-align: center;
+    background-image: url("https://wallpapercg.com/media/ts_orig/23893.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.425);
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+/* glowing effect on text with animation */
+
+/* 
+body{
+    background-color: black;
+} */
+
+.heading4{
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(to right ,red,blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 60px rgba(255, 0, 0, 0.475);
+    animation: animate 1s infinite alternate;
+}
+
+@keyframes animate {
+    100%{
+        text-shadow: 0 0 60px rgba(0, 119, 255, 0.475);
+
+    }
+}
+
+
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+/* rotate with perspective */
+
+.div{
+    padding: 100px 0 0 200px;
+    perspective: 200px;
+    object-fit: cover;
+}
+
+.img2{
+    height: 200px;
+    transform: rotateY(20deg);
+    /* transform: rotateX(20deg); */
+}
+
+
+/*------------------------------------------------------------##--------------------------------------------*/
+
+
+/*resize the box   */
+
+.box2{
+    background-color: salmon;
+    color: white;
+    padding: 10px;
+    resize: both;
+    overflow: auto;
+    max-height: 300px;
+    max-width: 500px;
+    margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
