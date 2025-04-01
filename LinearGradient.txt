@@ -1,0 +1,54 @@
+
+1. Sunset Gradient (Warm & Vibrant)
+css
+
+background: linear-gradient(to right, #FF7E5F, #FEB47B); /* Sunset orange to pink */
+
+
+2. Ocean Breeze (Cool & Calming)
+css
+
+background: linear-gradient(to right, #00B4DB, #0083B0); /* Blue shades */
+
+
+3. Purple Dream (Soft Purple to Pink)
+css
+
+background: linear-gradient(to right, #6A11CB, #2575FC); /* Purple to Blue */
+
+
+4. Pastel Rainbow (Soft and Light)
+css
+
+background: linear-gradient(to right, #FF9A8B, #F7B7A3, #E1C4F5, #A6E3E9); /* Pastels mix */
+
+
+5. Neon Fusion (Bright and Eye-catching)
+css
+
+background: linear-gradient(to right, #D100D1, #FF00FF, #00FFFF); /* Neon pink, purple, and cyan */
+
+
+
+6. Lime and Teal (Fresh & Modern)
+css
+
+background: linear-gradient(to right, #00FF7F, #00BFFF); /* Lime green to teal */
+
+
+
+7. Fire & Ice (Red to Blue)
+css
+
+background: linear-gradient(to right, #FF4500, #1E90FF); /* Red and Blue */
+
+
+Example of Usage:
+css
+
+.typing {
+  background: linear-gradient(to right, #FF7E5F, #FEB47B); /* Sunset gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
